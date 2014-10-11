@@ -1,0 +1,41 @@
+<html>
+	<head>
+    	<title>HomeIs.In</title>
+        <link rel="stylesheet" href="../css/main.css" type="text/css" />
+        <script src="../js/jquery-1.11.0.min.js"></script>
+        <script>
+		$(window).scroll(noScroll);
+		function noScroll(e) {
+			window.scrollTo(0, 0);
+			e.preventDefault();
+		}
+		
+		// $(document).ready(function(e) {
+		// 	$(".underline").click(function(e) {
+		// 		window.location = "11.html";
+		// 	});
+		// });
+        </script>
+        <style>
+			.underline {
+				cursor: pointer;
+			}
+            .body_border_gray {
+            overflow: hidden;
+            border: solid #71867e 8px;
+            }
+		</style>
+    </head>
+    <body class="body_border_gray" bgcolor="#f3f3f5">
+       	<img class="scaled" src="../images/seq_bg/dadkitchen2gray.png" />
+        <div class="overlay buffered_txt full">
+            <p>I think the kitchen has a high priority. <br>It also puts everyone in the house together and probably is the mostly busiest place of the home.</p>
+<p>In my opinion, the <a href="11.html";><span class="underline blue">entertainment</span></a><br>room is also an most important place. <br>It provides me the music, videos and news that relaxes me after a hard day<br> at work from the office.</p>
+        </div>
+        <img class="overlay floating_state" src="../images/intro/beijing.png" />
+        <img id="sign" style="position:fixed; right:27% !important;" src="../images/dadnamesmall.png" />
+        <div class="overlay btn_home">
+        	<a href="../index.html"><img src="../images/whitehouse.png" /></a>
+        </div>
+    </body>
+</html>

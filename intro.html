@@ -1,0 +1,119 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+	<head>
+    	<title>HomeIs.In</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css" />
+        <link rel="stylesheet" href="css/intro.css" type="text/css" />
+        <script src="js/jquery-1.11.0.min.js"></script>
+            <script>
+		$(document).ready(function(e) {
+			$(window).resize(resize);
+		});
+		$(window).load(resize);
+		function resize(e) {
+			$(".inner").css("overflow-y", "scroll");
+			$(".inner").width($(window).width() * .6);
+			$(".scroller").width($(".inner").width() - 20);
+		}
+        </script>
+        <style>
+			.underline {
+			}
+			.floating_state {
+				padding-left: 4% !important;
+				width: 150px;
+				height: auto;
+			}
+			.scroller {
+				overflow: hidden;
+			}
+			.inner {
+				overflow-y: hidden;
+				height: 80%;
+			}
+			#cont {
+				overflow: hidden;
+				width: 100%;
+				height: 100%;
+			}
+		.smaller {
+			position: absolute;
+			bottom: 5%;
+			width: 100%;
+			text-align: center;
+		}
+		.profile_txt {
+			margin-left: 26%;
+			margin-right: 21%;
+			top: 45%;
+		}
+		.txt_title_out {
+			cursor: pointer;
+		}
+		.btxt {
+			margin: 6% 22% 8% 22%;
+			text-align: left !important;
+		}
+		#enter:hover {
+			border-bottom: none;
+			padding-bottom: 3px;
+		}
+		#enter:hover a {
+			color: rgba(0,0,0,0);
+		}
+		.top_left {
+			z-index: 9999;
+		}
+		</style>
+        <script>
+		
+		$(document).ready(function(e) {
+			$(".txt_title_over").mouseover(function(e) {
+				$(".txt_title_over").addClass("hidden");
+				$(".txt_title_out").removeClass("hidden");
+			});
+			$(".txt_title_out").mouseout(function(e) {
+				$(".txt_title_over").removeClass("hidden");
+				$(".txt_title_out").addClass("hidden");
+			});
+			$(".txt_title_out").click(function(e) {
+				window.location = "index.html";
+				//$("#txt_intro").removeClass("hidden");
+			});
+		});
+		</script>
+    </head>
+    <body class="body_border" bgcolor="#f3f3f5">
+    	<div id="cont">
+       	<img id="bgmap" class="centered_scaled" src="images/intro/mapbackground.png" />
+        
+        <div class="txt_title_out top_left hidden"><img src="images/txt/HomeIsIn.png" /></div>
+        <div class="txt_title_over top_left"><img src="images/intro/questionmark.png" /></div>
+        <div class="overlay buffered_txt full">
+
+               <div class="rel">
+            <div class="scroller">
+       		<div class="inner">
+               
+           
+
+    		<p>
+    		<br>
+    		<span class="underline">Home Is.In</span> is an online project based off my family's concepts of home. It is meant to be a reading experience that expresses the dispersed, entangled, yet somehow unified manner of our interactions. <br><br>Different perspectives are apparent by shifting the location and dialogue in the browser as a form of a hyperlinked novel. Underlined words are key themes that<br> run through our discussions, and colors signify change in speaker. 
+    		<br>
+    		<br>
+    		Designed and compiled by Chelsea Wang under the advice of Jan Fairbairn for Typography <span class="number">III</span> during Spring <span class="number">2014</span>. This website is typeset using Aperçu Medium and uses code from OkFocus.
+    		<br>
+    		<br>
+    		Brought to reality with the assistance of<br> Charles Yeh and support from my family.
+
+    		</p>
+            
+
+             </div>
+        </div>
+            </div>
+            </div>
+		</div>
+    </body>
+</html>

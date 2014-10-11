@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>HomeIs.In</title>
+        <link rel="stylesheet" href="../css/main.css" type="text/css" />
+        <script src="../js/jquery-1.11.0.min.js"></script>
+        <script src="../js/okzoom.js"></script>
+        <script>
+        $(document).click(function(e) {
+            window.location = "15.html";
+        });
+        </script>
+        <style>
+            .buffered_txt {
+                background-color: rgba(255, 255, 255, .5);
+            }
+            #quote {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+            }
+            body {
+                background-image: url(../images/seq_bg/black.png);
+                background-size: cover;
+                overflow: hidden;
+            }
+        </style>
+        <script>
+            $(function() {
+                $("body").okzoom({
+                    width: "400",
+                    height: "400",
+                    scaleWidth: 1900,
+                    border: "1px solid #000"
+                });
+            });
+        </script>
+    </head>
+    <body data-okimage="../images/seq_bg/finalimage.png">
+        <div class="overlay btn_home">
+            <!-- <a href="../index.html"><img src="../images/whitehouse.png" /></a> -->
+        </div>
+    </body>
+</html>

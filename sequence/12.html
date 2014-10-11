@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>HomeIs.In</title>
+        <link rel="stylesheet" href="../css/main.css" type="text/css" />
+        <script src="../js/jquery-1.11.0.min.js"></script>
+        <script>
+        $(window).scroll(noScroll);
+        function noScroll(e) {
+            window.scrollTo(0, 0);
+            e.preventDefault();
+        }
+        
+        // $(document).ready(function(e) {
+        //     $(".underline").click(function(e) {
+        //         window.location = "13.html";
+        //     });
+        // });
+        </script>
+        <style>
+            .underline {
+                cursor: pointer;
+            }
+            .body_border_gray {
+            overflow: hidden;
+            border: solid #71867e 8px;
+            }
+        </style>
+    </head>
+    <body class="body_border_gray" bgcolor="#f3f3f5">
+        <img class="scaled" src="../images/seq_bg/dadroomgray.png" />
+        <div class="overlay buffered_txt full">
+            <p>When I identify places that are the most significant to me, I choose the places of the most social activity where the family can be <a href="13.html";><span class="underline blue">together</span></a>.</p>
+<p>As for other locations, I think that the <a href="5.html";><span class="underline lightblue">bedroom</span></a> is important but that is too common.</p>
+        </div>
+        <img class="overlay floating_state" src="../images/intro/beijing.png" />
+        <img id="sign" style="position:fixed; right:25% !important;" src="../images/dadnamesmall.png" />
+        <div class="overlay btn_home">
+            <a href="../index.html"><img src="../images/whitehouse.png" /></a>
+        </div>
+    </body>
+</html>

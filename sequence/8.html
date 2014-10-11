@@ -1,0 +1,73 @@
+<html>
+	<head>
+    	<title>HomeIs.In</title>
+        <link rel="stylesheet" href="../css/main.css" type="text/css" />
+        <script src="../js/jquery-1.11.0.min.js"></script>
+        <script>
+		$(window).scroll(function(e) {
+			console.log(e);
+		});
+		$(document).ready(function(e) {
+			// $(".underline").click(function(e) {
+			// 	window.location = "9.html";
+			// });
+			$(window).resize(resize);
+		});
+		$(window).load(resize);
+		function resize(e) {
+			$(".inner").css("overflow-y", "scroll");
+			$(".inner").width($(window).width() * .6);
+			$(".scroller").width($(".inner").width() - 20);
+		}
+        </script>
+        <style>
+			.underline {
+				cursor: pointer;
+			}
+			.floating_state {
+				padding-left: 4% !important;
+				width: 150px;
+				height: auto;
+			}
+			.scroller {
+				overflow: hidden;
+			}
+			.inner {
+				overflow-y: hidden;
+				height: 80%;
+			}
+			#cont {
+				overflow: hidden;
+				width: 100%;
+				height: 100%;
+			}
+
+			.body_border_blue {
+            overflow: hidden;
+            border: solid #0a35af 8px;
+            }
+		</style>
+    </head>
+    <body class="body_border_blue" bgcolor="#f3f3f5">
+    	<div id="cont">
+       	<img class="scaled" src="../images/seq_bg/momkitchen.png" />
+        <div class="overlay buffered_txt full">
+	        <div class="rel">
+            <div class="scroller">
+       		<div class="inner">
+                <p>Welcome to the our <a href="9.html";><span class="underline gray">kitchen</span></a>, the most<br> valuable and busiest area of our family home in Virginia. I take care of every-<br>thing that goes on here. </p>
+                <p>When family friends and guests come <br>over, they mostly mingle in this room.<br> It's the most valuable place of all and reminds me of the hectic schedules<br> when the children were around.</p>
+
+                <p>Our entire family associates <a href="11.html";><span class="underline blue">Virginia</span></a><br> as a place of upbringing, and early<br> family memories before the children <br>went to college. </p>
+            </div>
+            </div>
+            </div>
+        </div>
+        <img class="overlay floating_state" src="../images/intro/virginia.png" />
+        <img id="sign" style="position:fixed; right:26% !important;" src="../images/momnamesmall.png" />
+        <div class="overlay btn_home">
+        	<a href="../index.html"><img src="../images/whitehouse.png" /></a>
+        </div>
+        </div>
+    </body>
+</html>

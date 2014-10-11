@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: Apercu;
+	src: url('../fonts/Apercu.ttf');
+}
+@font-face {
+	font-family: ApercuMed;
+	src: url('../fonts/Apercu-Medium.otf');
+}
+body {
+	font-family: ApercuMed;
+	font-size: 50px;
+	margin: 0px;
+	box-sizing: border-box;
+	line-height: 39px;
+	overflow: hidden;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.rel {
+	position: relative;
+}
+/*** ALL-PURPOSE ***/
+.underline {
+	display: inline-block;
+	border-bottom: solid #000 4px;
+	height: 32px;
+}
+.hidden {
+	display: none !important;
+}
+.body_border {
+	overflow: hidden;
+	border: solid #000 8px;
+}
+
+.body_border_red {
+	overflow: hidden;
+	border: solid #f00 8px;
+}
+
+/*** POSITIONAL ***/
+.centered_scaled {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 95%;
+	width: auto;
+}
+.scaled {
+	min-width: 100%;
+	min-height: 100%;
+	height: auto;
+	width: 100%;
+}
+
+.enter {
+	display: inline-block;
+}
+.enter2 {
+	cursor: pointer;
+}
+.top_left {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+.overlay {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.full {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+.buffered_txt {
+	padding-top: 6%;
+	padding-right: 22%;
+	padding-left: 22%;
+}
+.buffered_body_txt {
+	padding-top: 7%;
+	padding-right: 22%;
+	padding-left: 22%;
+}
+.btn_home {
+	position: absolute;
+	margin: auto;
+	top: auto !important;
+	left: auto !important;
+	bottom: 9%;
+	right: 9%;
+}
+
+.discover {
+	color: #b8b4b7;
+	position: absolute;
+	margin: auto;
+	top: auto !important;
+	bottom: 100px;
+	left: 100px;
+}
+
+		.enter2 {
+			padding-top: 60px;
+			padding-right: 120px;
+		}
+.floating_state {
+	padding: 8% 12% 0% 8%;
+}
+
+
+			.gray:hover {
+				color: #71867e;
+				border-color: #71867e;
+			}
+			.red:hover {
+				color: #F00;
+				border-color: #f00;
+			}
+			.lightblue:hover {
+				color: #0da3e1;
+				border-color: #0da3e1;
+			}
+			.purple:hover {
+				color: #0a35af;
+				border-color: #0a35af;
+			}
+			.blue:hover {
+				color: #0a35af;
+				border-color: #0a35af;
+			}
+.smaller {
+	font-family: Apercu;
+}
+#sign {
+	position: absolute;
+	bottom: 9%;
+	right: 22%;
+}
+.innerscroll {
+	display: block;
+	overflow: scroll;
+	width: 110%;
+}
+.outerscroll {
+	display: block;
+	overflow: hidden;
+}
+
+.number {
+	display: inline-block;
+	font-size:44px;
+}
+
+.smallnumber {
+	display: inline-block;
+	font-size:22px;
+	}

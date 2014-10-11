@@ -1,0 +1,44 @@
+<html>
+	<head>
+    	<title>HomeIs.In</title>
+        <link rel="stylesheet" href="../css/main.css" type="text/css" />
+        <script src="../js/jquery-1.11.0.min.js"></script>
+        <script>
+		$(window).scroll(noScroll);
+		function noScroll(e) {
+			window.scrollTo(0, 0);
+			e.preventDefault();
+		}
+		
+		// $(document).ready(function(e) {
+		// 	$(".underline").click(function(e) {
+		// 		window.location = "12.html";
+		// 	});
+		});
+        </script>
+        <style>
+			.floating_state {
+				padding-left: 5% !important;
+			}
+			.underline {
+				cursor: pointer;
+			}
+			.body_border_blue {
+            overflow: hidden;
+            border: solid #0a35af 8px;
+            }
+		</style>
+    </head>
+    <body class="body_border_blue" bgcolor="#f3f3f5">
+       	<img class="scaled" src="../images/seq_bg/momroom.png" />
+        <div class="overlay buffered_txt full">
+            <p>Besides the kitchen, the living room serves as an important area as well and is also bustling when everyone's back.</p>
+            <p>Our living room is the haven for relax-<br>ation and entertainment. It's the <a>most familiar resting spot for <a href="12.html";><span class="underline gray">discussion</span></a><br> at the end of the day, when we can all gather together. Most of our conver-<br>sations happen here. </p>
+        </div>
+        <img class="overlay floating_state" src="../images/intro/virginia.png" />
+       <img id="sign" style="position:fixed; right:25% !important;" src="../images/momnamesmall.png" />
+        <div class="overlay btn_home">
+        	<a href="../index.html"><img src="../images/whitehouse.png" /></a>
+        </div>
+    </body>
+</html>

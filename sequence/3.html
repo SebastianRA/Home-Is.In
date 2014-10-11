@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    	<title>HomeIs.In</title>
+        <script src="../js/jquery-1.11.1.js"></script>
+        <script src="../js/okzoom.js"></script>
+        <script>
+		$(function(e) {
+			$("body").okzoom({
+				width: "400",
+				height: "400",
+				scaleWidth: 2200,
+				border: "1px solid #000"
+			});
+		});
+		
+		$(document).click(function(e) {
+			window.location = "4.html";
+		});
+        </script>
+        <style>
+			#quote {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+			}
+			body {
+                background-image: url(../images/seq_bg/chelseastudio.png);
+				background-size: cover;
+				margin: 0px;
+				height: 100%;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+				overflow: hidden;
+			}
+			html {
+				height: 100%;
+			}
+#home {
+	position: fixed;
+	
+	width: 50px;
+	height: 50px;
+	
+	right: 5%;
+	bottom: 5%;
+}
+
+.body_border_red {
+	overflow: hidden;
+	border: solid #f00 8px;
+}
+
+		</style>
+    </head>
+    <body class="body_border_red" data-okimage="../images/seq_bg/chelseastudiowriting.png">
+      <!--   <div id="home"><img src="../images/whitehouse.png" /></div> -->
+	</body>
+</html>
